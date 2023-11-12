@@ -46,3 +46,17 @@ python
 import tensorflow as tf  
 tf.__version__  
 tf.test.is_gpu_available()  
+
+Download pytorch
+------  
+
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu112  
+cd C:\yolov7  
+conda create -n yolov7 python=3.9  
+pip install -r requirements.txt  
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113  
+python  
+import torch  
+torch.cuda.is_available()  
+pip install numpy==1.23.1  
+ 
